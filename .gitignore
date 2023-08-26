@@ -1,3 +1,4 @@
+
 # Gradle files
 .gradle/
 build/
@@ -31,3 +32,47 @@ google-services.json
 
 # Android Profiling
 *.hprof
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Android Studio / IntelliJ
+.idea/
+
+# Gradle
+.gradle/
+build/
+
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.jar
+
+# Compiled JNI libraries (Libs)
+**/build/intermediates/cxx/**
+
+# Android Profiler
+*.hprof
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# Proguard files
+proguard/
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+# Android Image Folder
+app/build/outputs/
