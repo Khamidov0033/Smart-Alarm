@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alarm.SetupAlarmFragment">
+
+    <Button
+        android:id="@+id/add_alarm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/alarm_linear"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_alarm_button">
+
+        <TextView
+            android:id="@+id/alarm_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:00"
+            android:textSize="22sp" />
+<Space
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"/>
+        <Switch
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:id="@+id/alarm_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
